@@ -1,15 +1,13 @@
 from dtos import Node
+import random
+from leetcode_problems.Invert_binary_tree import invert
+from leetcode_problems.Binary_Tree_Paths import print_paths
 
-root = Node(10)
-root.insert(6)
-root.insert(4)
-root.insert(2)
-root.insert(5)
-root.insert(1)
-root.insert(34)
-root.insert(13)
-root.insert(11)
-root.insert(56)
-root.insert(7)
-root.PrintTreeInDepth()
+root = Node(1)
+for i in range(1,20):
+    f = random.randrange(1,100)
+    root.insert(f)
 root.display()
+invert(root)
+root.display()
+print_paths(root)
