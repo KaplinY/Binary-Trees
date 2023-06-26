@@ -1,0 +1,15 @@
+from dtos import Node
+
+root = Node(10)
+root.insert(6)
+root.insert(4)
+root.insert(2)
+root.insert(5)
+root.insert(1)
+root.insert(34)
+root.insert(13)
+root.insert(11)
+root.insert(56)
+root.insert(7)
+root.PrintTreeInDepth()
+root.display()
